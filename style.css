@@ -1,0 +1,56 @@
+header {
+    background-color: #0B1C51;
+}
+
+header h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+header nav ul li :last-child a {
+    margin-right: 0
+} 
+
+
+@media all and (min-width: 600px) {
+    header { 
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    header h1 {
+        margin: 14px;
+        padding-top: 0;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header ul li a :hover {
+        color: white;
+    }
+
+}
